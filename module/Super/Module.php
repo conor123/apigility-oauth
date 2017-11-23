@@ -2,6 +2,7 @@
 namespace Super;
 
 use ZF\Apigility\Provider\ApigilityProviderInterface;
+use Zend\Uri\UriFactory; // Add this line
 
 class Module implements ApigilityProviderInterface
 {
@@ -19,5 +20,11 @@ class Module implements ApigilityProviderInterface
                 ],
             ],
         ];
+    }
+
+    // Insert the method below
+    public function onBootstrap()
+    {
+        UriFactory::registerScheme('chrome-extension', 'Zend\Uri\Uri');
     }
 }

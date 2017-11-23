@@ -28,9 +28,10 @@ return [
     'ZF\\Versioning',
     'DoctrineModule',
     'Phpro\DoctrineHydrationModule',
-    'ZF\Apigility\Doctrine\Admin',
+    //'ZF\Apigility\Doctrine\Admin',
     'ZF\Apigility\Doctrine\Server',
     'DoctrineORMModule',
+    'ZfrCors',
     'Application',
     'Super',
 ];
