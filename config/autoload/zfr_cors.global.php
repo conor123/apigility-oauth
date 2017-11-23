@@ -46,7 +46,6 @@ return [
 
          // Add the origin address to the array below:
          'allowed_origins' => ['http://example.com', 'chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop'],
-         // ...
-         ];
-    ],
+
+    ]
 ];
