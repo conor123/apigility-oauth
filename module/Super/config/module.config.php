@@ -56,10 +56,14 @@ return [
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
+                4 => 'POST',
             ],
             'collection_http_methods' => [
                 0 => 'GET',
                 1 => 'POST',
+                2 => 'PUT',
+                3 => 'PATCH',
+                4 => 'DELETE',
             ],
             'collection_query_whitelist' => [],
             'page_size' => 25,
@@ -79,10 +83,14 @@ return [
                 1 => 'PATCH',
                 2 => 'PUT',
                 3 => 'DELETE',
+                4 => 'POST',
             ],
             'collection_http_methods' => [
                 0 => 'GET',
                 1 => 'POST',
+                2 => 'PUT',
+                3 => 'PATCH',
+                4 => 'DELETE',
             ],
             'collection_query_whitelist' => [],
             'page_size' => 25,
@@ -114,8 +122,7 @@ return [
                 0 => 'application/json',
             ],
             'Super\\V1\\Rest\\OauthUsers\\Controller' => [
-                0 => 'application/vnd.super.v1+json',
-                1 => 'application/json',
+                0 => 'application/json',
             ],
         ],
     ],
@@ -296,8 +303,8 @@ return [
         'authorization' => [
             'Super\\V1\\Rest\\Products\\Controller' => [
                 'collection' => [
-                    'GET' => false,
-                    'POST' => false,
+                    'GET' => true,
+                    'POST' => true,
                     'PUT' => false,
                     'PATCH' => false,
                     'DELETE' => false,
@@ -305,9 +312,9 @@ return [
                 'entity' => [
                     'GET' => true,
                     'POST' => false,
-                    'PUT' => false,
-                    'PATCH' => false,
-                    'DELETE' => false,
+                    'PUT' => true,
+                    'PATCH' => true,
+                    'DELETE' => true,
                 ],
             ],
         ],
