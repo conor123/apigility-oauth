@@ -1,3 +1,11 @@
+Apigility Oauth Demo
+====================
+
+turn on mysql `mysql.server start`
+composer serve
+post a request
+
+
 Apigility Skeleton Application
 ==============================
 
